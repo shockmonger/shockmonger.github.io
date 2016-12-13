@@ -44,41 +44,29 @@
 <!-- <textarea id="fileContent" placeholder="Start Writing..." spellcheck="false"></textarea>
  -->
 	<div>
-<form action="create.php" method="get">
-Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
+<form action="create.php" method="POST">
+Message: <input type="text" name="message"><br>
+Sender: <input type="text" name="sender"><br>
 <input type="submit">
 </form> 		
 	</div>
 <div id ="display" ></div>
 
-<button id = "button" value="Submit"></button>
+<button id = "button" value="Display"></button>
 
 <script src="app.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $("button").click(function(){
+        $.ajax({url: "data.txt", success: function(result){
+            $("#display").html(result);
+        }});
+    });
+});
+</script>
+</script>
+
 </body>
 </html>
-	<!-- <div class="btn-group">
-			<button id="save" class="save-btn" title="Save/Download"><svg><use xlink:href="#icon-file-download"></use></svg></button>
-			<button id="clear" class="clear-btn" title="Clear/Delete"><svg><use xlink:href="#icon-delete"></use></svg></button>
-			<button id="settings" class="settings-btn" title="Toggle Settings"><svg><use xlink:href="#icon-settings"></use></svg></button>
-		</div> -->
-<!-- <li class="settings-menu__item">
-					<button id="theme" title="Toggle Theme"><svg><use xlink:href="#icon-invert-colors"></use></svg></button>
-					<button id="reset" title="Reset to Defaults"><svg><use xlink:href="#icon-refresh"></use></svg></button>
-				</li> -->
-<!-- <div id="homepage" class="overlay" role="main">
-	<section>
-		<svg><use xlink:href="#logo"></use></svg>
-		<h1>TextPad</h1>
-		<p>This is a simple online notepad, no WYSIWYG, no fancy stuff, just write. The text will live in your browser until you decide to delete it, come back anytime to continue writing. You can also download your text as a .txt file after you're finished!</p>
-		<button id="start">Start Writing</button>
-		<p class="footnote">An experiment built by <a href="http://syndicatefx.com">Syndicatefx</a><br> Read <a href="http://textpad.surge.sh/disclaimer.html">Disclaimer</a></p><p class="footnote">source code on <a href="https://github.com/syndicatefx/textpad">Github</a></p>
-	</section>
-</div> -->
-<!-- <footer role="contentinfo">
-	<button id="info" class="info-btn" title="Info"><svg><use xlink:href="#icon-info-outline"></use></svg></button>
-	<ul class="counter">
-		<li id="charCounter"></li>
-		<li id="wordCounter"></li>
-	</ul>
-</footer> -->
+
