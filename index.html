@@ -44,14 +44,10 @@
 <!-- <textarea id="fileContent" placeholder="Start Writing..." spellcheck="false"></textarea>
  -->
 	<div>
-<form id ='create' method='POST' action='create.php'>
-  Type New Message:<br>
-  <input type="text" name="url" >
-  <input type="submit" value="Create" /> 
-  <div id=created></div>
-
-  <br>
-  <!-- <input type="submit" value="Submit"> -->
+<form action="welcome_get.php" method="get">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<input type="submit">
 </form> 		
 	</div>
 <div id ="display" ></div>
@@ -59,23 +55,6 @@
 <button id = "button" value="Submit"></button>
 
 <script src="app.js"></script>
-<script>
-
-$('#create').submit(function () {
-    $.post('create.php', $('#create').serialize(), function (data, textStatus) {
-         $('#created').append(data);
-    });
-    return false;
-});
-
-// $(document).ready(function(){
-//     $("button").click(function(){
-//         $.ajax({ success: function(result){
-//             $("#display").html(result);
-//         }});
-//     });
-//});
-</script>
 </body>
 </html>
 	<!-- <div class="btn-group">
