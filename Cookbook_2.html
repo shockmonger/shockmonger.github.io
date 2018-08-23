@@ -16420,7 +16420,7 @@ JKmrXJSUJEmSJEmSJEmS1FX/AXXrxpNQSZkyAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">detect_peaks</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;p1&#39;</span><span class="p">],</span><span class="n">show</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
@@ -16429,7 +16429,6 @@ JKmrXJSUJEmSJEmSJEmS1FX/AXXrxpNQSZkyAAAAAElFTkSuQmCC
 <span class="n">detect_peaks</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;p4&#39;</span><span class="p">],</span><span class="n">show</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="n">detect_peaks</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;p5&#39;</span><span class="p">],</span><span class="n">show</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="n">detect_peaks</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;p6&#39;</span><span class="p">],</span><span class="n">show</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-<span class="n">detect_peaks</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;p7&#39;</span><span class="p">],</span><span class="n">show</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -19392,63 +19391,34 @@ hijxi4iIZIgSv4iISIYo8YuIiGSIEr+IiEiGKPGLiIhkyP8B0V4y2tODHVMAAAAASUVORK5CYII=
 
 <div class="output_area">
 
-<div class="prompt"></div>
+<div class="prompt output_prompt">Out[51]:</div>
 
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-50-34b5cce2e71a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> detect_peaks<span class="ansi-blue-fg">(</span>data<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;p5&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span>show<span class="ansi-blue-fg">=</span>True<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      6</span> detect_peaks<span class="ansi-blue-fg">(</span>data<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;p6&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span>show<span class="ansi-blue-fg">=</span>True<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">----&gt; 7</span><span class="ansi-red-fg"> </span>detect_peaks<span class="ansi-blue-fg">(</span>data<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;p7&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span>show<span class="ansi-blue-fg">=</span>True<span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">/usr/local/lib/python2.7/dist-packages/pandas/core/frame.pyc</span> in <span class="ansi-cyan-fg">__getitem__</span><span class="ansi-blue-fg">(self, key)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1962</span>             <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_getitem_multilevel<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1963</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">-&gt; 1964</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_getitem_column<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1965</span> 
-<span class="ansi-green-intense-fg ansi-bold">   1966</span>     <span class="ansi-green-fg">def</span> _getitem_column<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> key<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
 
-<span class="ansi-green-fg">/usr/local/lib/python2.7/dist-packages/pandas/core/frame.pyc</span> in <span class="ansi-cyan-fg">_getitem_column</span><span class="ansi-blue-fg">(self, key)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1969</span>         <span class="ansi-red-fg"># get column</span>
-<span class="ansi-green-intense-fg ansi-bold">   1970</span>         <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>columns<span class="ansi-blue-fg">.</span>is_unique<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">-&gt; 1971</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_get_item_cache<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1972</span> 
-<span class="ansi-green-intense-fg ansi-bold">   1973</span>         <span class="ansi-red-fg"># duplicate columns &amp; possible reduce dimensionality</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python2.7/dist-packages/pandas/core/generic.pyc</span> in <span class="ansi-cyan-fg">_get_item_cache</span><span class="ansi-blue-fg">(self, item)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1643</span>         res <span class="ansi-blue-fg">=</span> cache<span class="ansi-blue-fg">.</span>get<span class="ansi-blue-fg">(</span>item<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1644</span>         <span class="ansi-green-fg">if</span> res <span class="ansi-green-fg">is</span> None<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">-&gt; 1645</span><span class="ansi-red-fg">             </span>values <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_data<span class="ansi-blue-fg">.</span>get<span class="ansi-blue-fg">(</span>item<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1646</span>             res <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_box_item_values<span class="ansi-blue-fg">(</span>item<span class="ansi-blue-fg">,</span> values<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1647</span>             cache<span class="ansi-blue-fg">[</span>item<span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> res
-
-<span class="ansi-green-fg">/usr/local/lib/python2.7/dist-packages/pandas/core/internals.pyc</span> in <span class="ansi-cyan-fg">get</span><span class="ansi-blue-fg">(self, item, fastpath)</span>
-<span class="ansi-green-intense-fg ansi-bold">   3588</span> 
-<span class="ansi-green-intense-fg ansi-bold">   3589</span>             <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> isnull<span class="ansi-blue-fg">(</span>item<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">-&gt; 3590</span><span class="ansi-red-fg">                 </span>loc <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>items<span class="ansi-blue-fg">.</span>get_loc<span class="ansi-blue-fg">(</span>item<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   3591</span>             <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   3592</span>                 indexer <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>arange<span class="ansi-blue-fg">(</span>len<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>items<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span>isnull<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>items<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">]</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python2.7/dist-packages/pandas/core/indexes/base.pyc</span> in <span class="ansi-cyan-fg">get_loc</span><span class="ansi-blue-fg">(self, key, method, tolerance)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2442</span>                 <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_engine<span class="ansi-blue-fg">.</span>get_loc<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2443</span>             <span class="ansi-green-fg">except</span> KeyError<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">-&gt; 2444</span><span class="ansi-red-fg">                 </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_engine<span class="ansi-blue-fg">.</span>get_loc<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>_maybe_cast_indexer<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2445</span> 
-<span class="ansi-green-intense-fg ansi-bold">   2446</span>         indexer <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>get_indexer<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span>key<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> method<span class="ansi-blue-fg">=</span>method<span class="ansi-blue-fg">,</span> tolerance<span class="ansi-blue-fg">=</span>tolerance<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">pandas/_libs/index.pyx</span> in <span class="ansi-cyan-fg">pandas._libs.index.IndexEngine.get_loc (pandas/_libs/index.c:5280)</span><span class="ansi-blue-fg">()</span>
-
-<span class="ansi-green-fg">pandas/_libs/index.pyx</span> in <span class="ansi-cyan-fg">pandas._libs.index.IndexEngine.get_loc (pandas/_libs/index.c:5126)</span><span class="ansi-blue-fg">()</span>
-
-<span class="ansi-green-fg">pandas/_libs/hashtable_class_helper.pxi</span> in <span class="ansi-cyan-fg">pandas._libs.hashtable.PyObjectHashTable.get_item (pandas/_libs/hashtable.c:20523)</span><span class="ansi-blue-fg">()</span>
-
-<span class="ansi-green-fg">pandas/_libs/hashtable_class_helper.pxi</span> in <span class="ansi-cyan-fg">pandas._libs.hashtable.PyObjectHashTable.get_item (pandas/_libs/hashtable.c:20477)</span><span class="ansi-blue-fg">()</span>
-
-<span class="ansi-red-fg">KeyError</span>: &#39;p7&#39;</pre>
+<div class="output_text output_subarea output_execute_result">
+<pre>array([   5,    9,   15,   18,   22,   24,   37,   51,   62,   73,   79,
+         85,   88,   91,   94,   97,  103,  112,  119,  122,  141,  160,
+        162,  167,  177,  191,  200,  202,  204,  211,  213,  216,  229,
+        240,  244,  247,  251,  253,  258,  269,  284,  286,  289,  293,
+        307,  320,  323,  330,  334,  337,  350,  366,  369,  372,  374,
+        385,  400,  404,  415,  432,  439,  441,  445,  448,  450,  470,
+        474,  493,  495,  501,  507,  510,  520,  525,  527,  530,  536,
+        539,  542,  547,  552,  555,  564,  566,  573,  577,  580,  590,
+        603,  608,  610,  613,  617,  619,  622,  625,  632,  634,  640,
+        643,  647,  651,  655,  660,  663,  687,  701,  706,  720,  736,
+        742,  748,  752,  762,  771,  784,  786,  802,  819,  824,  830,
+        839,  841,  850,  857,  860,  863,  867,  869,  876,  885,  887,
+        889,  895,  907,  916,  920,  923,  926,  930,  941,  951,  958,
+        962,  970,  973,  976,  981,  992,  995,  998, 1006, 1008, 1019,
+       1022, 1027, 1029, 1033, 1039, 1042, 1051, 1061, 1075, 1078, 1081,
+       1095, 1106, 1110, 1126, 1134, 1137, 1144, 1148, 1156, 1163, 1171,
+       1174, 1179, 1187, 1190, 1199, 1203, 1209, 1211, 1215, 1217, 1224,
+       1234, 1240, 1243, 1254, 1263, 1271, 1277, 1287, 1299, 1303, 1309,
+       1316, 1322, 1325, 1328, 1331, 1334, 1337, 1346, 1350, 1355, 1361,
+       1375, 1390, 1394, 1399])</pre>
 </div>
+
 </div>
 
 </div>
