@@ -1,0 +1,162 @@
+/*----- GENERAL -----*/
+	h1 {
+    	font-size: 33px;
+    	line-height: 33px;
+ 	}
+
+	h2 {
+        font-size: 28px;
+        line-height: 24px;
+     }
+
+     h3 {
+        font-size: 24px;
+        line-height: 20px;
+     }
+
+	p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset{margin-bottom:10px}
+	
+	
+	/*----- MAIN HEADER NAV STRIP -----*/
+
+     #mainNav {
+        border-top: 1px solid #222;
+        border-bottom: 2px solid #222;
+        margin-top: 10px;
+        padding: 15px;
+        font-family: "Bookman Old Style","Palatino","Garamond","Georgia";
+
+     }
+
+	/*------ ARTICLE -------*/
+	
+	#container {
+		max-width:none;
+        width:100%;
+	}
+	
+	div.layout article div br {
+		display: none;
+	}
+	
+	#languages #motherTongue {
+         width: 33%;
+         position: relative;
+         float: left;
+         border-right: none;
+         
+    }
+    #languages #fatherTongue {
+         width: 33%;
+         position: relative;
+         float: left;
+         border-right: none;        
+    }
+    
+    #languages #foreignTongue {
+         width: 33%;
+         position: relative;
+         float: left; 
+    }
+
+    #languages #language {
+        margin: 0 auto;
+        width: 85%;
+        text-align: center;
+        min-height: 30px;
+	}
+	
+	#languages #language img {
+		max-width:100%;
+	}
+
+/*----- PROJECTS PAGE -----*/
+	div.project_section {
+		margin: 0;     
+    }
+
+	div.project_section .project iframe {
+		width:280px;
+		height:210px;
+	}
+	
+	div.project_section .project img {
+		border: 1px #ccc solid;
+		width:280px;
+	}
+
+/*----- CONTACT SECTION -----*/
+    div.boxes {
+      	position:relative;
+	}
+
+	.form_box {
+       	border-right: none;
+       	width: 100%;
+       	margin-top: 28%;
+ 		margin-right: auto;
+ 		margin-left: auto;
+   	}
+
+	div.row span.button {
+		text-align:center;
+        width:100%;
+    }
+
+	div.row span.label {
+        float: left;
+        width: 100%;
+        text-align: left;
+        padding-left:0px;
+    }
+    
+    label {
+        padding-right: 0px;
+    }
+    
+    div.row span.form_field {
+        float: left;
+        width: 100%;
+        text-align: left;
+        padding-top: 0px;
+    }
+
+	div.row span.form_field input{
+		width:95%;
+		height:20px;
+	}
+	
+	div.row span.form_field input#send_button{
+		margin-top:5px;
+		margin-left:auto;
+		margin-right:auto;
+        width: 50%;
+		height:40px;
+    }
+
+	div.row span.form_field textarea{
+        width: 96%;
+        height: 30px;
+    }
+	.contact_box {
+		width: 100%;
+        position: absolute;
+		float:none;
+		top:4%;
+		left:30%;
+		margin:0 auto;
+    }
+    
+    .contact_box img {
+        width:40%;
+    }
+
+/*----- FOOTER SECTION -----*/
+
+     #footerSection {
+        padding: 10px 0 20px 0;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 8px;
+     }
+
+  
